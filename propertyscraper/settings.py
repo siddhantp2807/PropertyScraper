@@ -76,7 +76,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "propertyscraper.wsgi.application"
 
 CRONJOBS = [
-    ('*/5 * * * *', 'scraper.tasks.fetchdata'),
+    ('* 10,22 * * *', 'scraper.tasks.fetchdata'),
 ]
 
 # Database
